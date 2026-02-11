@@ -40,3 +40,55 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Center everything */
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* The board container - 3x3 grid */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);  /* 3 columns, 100px each */
+  grid-template-rows: repeat(3, 100px);     /* 3 rows, 100px each */
+  gap: 5px;  /* Space between squares */
+  margin: 20px 0;
+}
+
+/* Each square */
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  background-color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #000000
+}
+
+/* Hover effect */
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+/* Status text */
+.status {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* Reset button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
