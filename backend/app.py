@@ -26,7 +26,6 @@ class BoardState(BaseModel):
 def load_model():
     global model
     
-    # Get the directory where app.py lives
     base_dir = os.path.dirname(os.path.abspath(__file__))
     model_path = os.path.join(base_dir, "models", "tictactoe_ppo")
     
